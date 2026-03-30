@@ -1,0 +1,182 @@
+/*-- scss:defaults --*/
+
+// ── Google Fonts ──
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,400;1,7..72,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap');
+
+// ── Claude color palette ──
+$cream:          #eeece2;   // page background
+$cream-light:    #f5f4ee;   // lighter variant
+$pampas:         #f4f3ee;   // card backgrounds
+$terracotta:     #da7756;   // primary / accent (logo color)
+$terracotta-dark:#bd5d3a;   // buttons / hover
+$text-dark:      #3d3929;   // body text
+$text-muted:     #6b6552;   // secondary text
+$cloudy:         #b1ada1;   // borders, subtle UI
+$white:          #ffffff;
+
+// ── Bootstrap variable overrides ──
+$body-bg:          $cream;
+$body-color:       $text-dark;
+$font-family-base: 'Source Serif 4', 'Literata', Georgia, ui-serif, serif;
+$headings-font-family: 'Literata', Georgia, ui-serif, serif;
+$font-family-monospace: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+$font-size-base:   1.05rem;
+$headings-font-weight: 600;
+$headings-color:   $text-dark;
+
+$link-color:       $terracotta-dark;
+$link-hover-color: $terracotta;
+
+$primary:          $terracotta;
+$secondary:        $cloudy;
+
+$navbar-bg:        $cream;
+$navbar-fg:        $text-dark;
+
+$border-color:     #ddd8ca;
+$border-radius:    0.5rem;
+
+$code-bg:          $pampas;
+$code-color:       $terracotta-dark;
+
+
+/*-- scss:rules --*/
+
+// ── Global ──
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// ── Navbar ──
+.navbar {
+  border-bottom: 1px solid $border-color;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.navbar-title {
+  font-family: 'Literata', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: $text-dark !important;
+}
+
+// ── Headings ──
+h1, h2, h3, h4, h5, h6 {
+  color: $text-dark;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-weight: 700; }
+
+// ── Title banner ──
+.title-block-banner {
+  background-color: $cream-light !important;
+  border-bottom: 1px solid $border-color;
+}
+
+// ── Cards & listing items ──
+.quarto-listing-default .listing-item,
+.card {
+  background-color: $white;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 2px 12px rgba(61, 57, 41, 0.08);
+  }
+}
+
+// ── Links ──
+a {
+  text-decoration: none;
+  transition: color 0.15s ease;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+// ── Code blocks ──
+pre {
+  background-color: $pampas !important;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: 1rem;
+}
+
+code {
+  font-size: 0.88em;
+}
+
+div.sourceCode {
+  background-color: $pampas !important;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+}
+
+// ── Sidebar / TOC ──
+.sidebar nav[role="doc-toc"] a {
+  color: $text-muted;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 0.85rem;
+
+  &:hover,
+  &.active {
+    color: $terracotta-dark;
+  }
+}
+
+// ── Footer ──
+.nav-footer {
+  background-color: $cream-light;
+  border-top: 1px solid $border-color;
+  color: $text-muted;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 0.85rem;
+}
+
+// ── Categories / badges ──
+.quarto-category {
+  font-family: 'Literata', Georgia, serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: $terracotta-dark;
+  background-color: rgba($terracotta, 0.1);
+  border: 1px solid rgba($terracotta, 0.2);
+  border-radius: 1rem;
+  padding: 0.15rem 0.6rem;
+}
+
+// ── Buttons ──
+.btn-primary,
+.btn-outline-primary {
+  border-color: $terracotta;
+  color: $white;
+  background-color: $terracotta;
+
+  &:hover {
+    background-color: $terracotta-dark;
+    border-color: $terracotta-dark;
+  }
+}
+
+// ── Blockquotes ──
+blockquote {
+  border-left: 3px solid $terracotta;
+  padding-left: 1rem;
+  color: $text-muted;
+  font-style: italic;
+}
+
+// ── Selection color ──
+::selection {
+  background-color: rgba($terracotta, 0.2);
+  color: $text-dark;
+}

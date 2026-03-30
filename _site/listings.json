@@ -1,0 +1,26 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/posts.ko.html",
+    "items": [
+      "/posts/welcome/index.ko.html"
+    ]
+  },
+  {
+    "listing": "/ko/index.html",
+    "items": [
+      "/posts/welcome/index.ko.html"
+    ]
+  }
+]

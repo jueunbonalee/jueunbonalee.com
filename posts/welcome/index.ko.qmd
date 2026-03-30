@@ -1,0 +1,21 @@
+---
+title: "jueunbonalee에 오신 것을 환영합니다"
+description: "새롭게 단장한 데이터 사이언스 블로그를 소개합니다"
+author: "jueunbonalee"
+date: "2026-03-30"
+lang: ko
+categories: [news, blog]
+---
+
+## 안녕하세요!
+
+새롭게 단장한 블로그에 오신 것을 환영합니다. 이곳에서 영어와 한국어로 데이터 사이언스 콘텐츠를 공유할 예정입니다.
+
+앞으로 다룰 주제:
+
+- 머신러닝 튜토리얼
+- 데이터 분석 워크스루
+- 통계적 사고
+- 도구 및 워크플로우 팁
+
+[🇬🇧 Read in English](index.qmd)

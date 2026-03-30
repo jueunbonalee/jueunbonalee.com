@@ -1,0 +1,25 @@
+---
+title: "소개"
+lang: ko
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com
+---
+
+## 자기소개
+
+안녕하세요! 데이터를 통해 실질적인 인사이트를 만들어내는 데이터 사이언티스트입니다.
+
+## 블로그 소개
+
+이 블로그는 데이터 사이언스, 머신러닝, 통계 분석 등 다양한 주제를 다룹니다. 포스트는 영어와 한국어로 제공됩니다.

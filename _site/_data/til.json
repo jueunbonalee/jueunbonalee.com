@@ -1,0 +1,17 @@
+{
+  "2026-03-28": {
+    "text": "Learned about Quarto multilingual blog setup with directory-based approach. Each post can have .ko.qmd alongside index.qmd for Korean translation.",
+    "tags": ["R", "Project"],
+    "mood": "3"
+  },
+  "2026-03-29": {
+    "text": "Explored custom SCSS theming in Quarto — overriding Bootstrap variables with Claude-inspired terracotta palette. Google Fonts Literata works great as a Copernicus alternative.",
+    "tags": ["R", "Viz"],
+    "mood": "4"
+  },
+  "2026-03-30": {
+    "text": "Built a TIL tracker page with calendar view, sidebar list, and yearly heatmap. Used vanilla JS with JSON data file approach for static site compatibility.",
+    "tags": ["Project", "Viz"],
+    "mood": "4"
+  }
+}

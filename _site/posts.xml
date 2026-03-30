@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>jueunbonalee</title>
+<link>https://jueunbonalee.com/posts.html</link>
+<atom:link href="https://jueunbonalee.com/posts.xml" rel="self" type="application/rss+xml"/>
+<description>jueunbonalee</description>
+<generator>quarto-1.8.25</generator>
+<lastBuildDate>Sun, 29 Mar 2026 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Welcome to jueunbonalee</title>
+  <dc:creator>jueunbonalee </dc:creator>
+  <link>https://jueunbonalee.com/posts/welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="hello-world" class="level2">
+<h2 class="anchored" data-anchor-id="hello-world">Hello, World!</h2>
+<p>Welcome to the refreshed version of my blog. I’ll be sharing data science content here in both English and Korean.</p>
+<p>Stay tuned for posts on:</p>
+<ul>
+<li>Machine learning tutorials</li>
+<li>Data analysis walkthroughs</li>
+<li>Statistical thinking</li>
+<li>Tools and workflow tips</li>
+</ul>
+<p><a href="../../posts/welcome/index.ko.html">🇰🇷 한국어로 읽기</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <category>blog</category>
+  <guid>https://jueunbonalee.com/posts/welcome/</guid>
+  <pubDate>Sun, 29 Mar 2026 22:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

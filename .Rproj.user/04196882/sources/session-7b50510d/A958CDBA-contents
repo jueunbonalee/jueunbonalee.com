@@ -1,0 +1,37 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - _data/til.json
+
+website:
+  title: "jueunbonalee"
+  description: "jueunbonalee"
+  site-url: https://jueunbonalee.com 
+  
+  navbar:
+    left:
+      - text: "Posts"
+        href: posts.qmd
+      - text: "TIL"
+        href: til.qmd
+    # right:
+      #- text: "🇬🇧"
+      #  href: index.qmd
+      #  aria-label: "English"
+      #- text: "🇰🇷"
+      #  href: ko/index.qmd
+      #  aria-label: "한국어"
+  
+  page-footer:
+    center: "© 2026 jueunbonalee. All rights reserved."
+
+lang: en
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - theme.scss
+    css: styles.css
+    toc: true

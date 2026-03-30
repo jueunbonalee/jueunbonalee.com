@@ -1,0 +1,18 @@
+lang: ko
+
+website:
+  navbar:
+    left:
+      - text: "포스트"
+        href: ../posts.ko.qmd
+    right:
+      - text: "🇰🇷"
+        href: index.qmd
+        aria-label: "한국어"
+      - text: "🇬🇧"
+        href: ../index.qmd
+        aria-label: "English"
+
+
+  page-footer:
+    center: "© 2026 jueunbonalee. All rights reserved."

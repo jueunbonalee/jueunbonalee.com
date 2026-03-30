@@ -1,0 +1,11 @@
+---
+title: "포스트"
+lang: ko
+listing:
+  contents: posts/*/index.ko.qmd
+  sort: "date desc"
+  type: default
+  categories: true
+  feed: true
+page-layout: full
+---
