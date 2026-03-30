@@ -13,6 +13,18 @@ Today, I’m focusing on **data analysis**, **data science**, and **machine lear
 
 This blog is a space for sharing my projects, reflections, and ongoing learning at the intersection of **data, technology, and society**.
 
-<br>
-
 <a href="https://github.com/jueunbonalee" target="_blank" class="btn btn-dark" role="button">GitHub</a> <a href="https://www.linkedin.com/in/jueunbonalee" target="_blank" class="btn btn-primary" role="button">LinkedIn</a>
+
+## Work Experience
+
+-   Marketing Strategy Specialist at Fever (Jul 2023 - Jul 2025)
+
+-   Digital Marketing Manager at MODUBA (Nov 2020 - Jun 2023)
+
+-   Digital Marketing Consultant at Project Nord (Mar 2021 - Oct 2021)
+
+## Skills
+
+-   R, SQL
+
+-   Text mining, Data harvesting (API & Web scraping)
