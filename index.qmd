@@ -3,10 +3,16 @@ page-layout: full
 title-block-banner: true
 ---
 
-## About Me
+## Hi, I’m Jueun (Bona) Lee
 
-Welcome! I'm a data scientist passionate about turning data into actionable insights.
+I’m currently based in Madrid, Spain, and pursuing a Master’s degree in Computational Social Science at Universidad Carlos III de Madrid.
 
-## About This Blog
+Before returning to academia, I worked as a digital marketing strategist for startups across different parts of the world. That journey led me to a deeper interest in how data can help us understand people, society, and decision-making.
 
-This blog covers topics in data science, machine learning, statistical analysis, and more. Posts are available in both English and Korean.
+Today, I’m focusing on **data analysis**, **data science**, and **machine learning**. I’m especially interested in combining computational methods with social questions to generate insights that are both analytical and human-centered.
+
+This blog is a space for sharing my projects, reflections, and ongoing learning at the intersection of **data, technology, and society**.
+
+<br>
+
+<a href="https://github.com/jueunbonalee" target="_blank" class="btn btn-dark" role="button">GitHub</a> <a href="https://www.linkedin.com/in/jueunbonalee" target="_blank" class="btn btn-primary" role="button">LinkedIn</a>
