@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Today I Learned – jueunbonalee</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-f2aa3fcab4a3c0cbb1a885f128e95a4e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-ba4d2a995090b82126b1473a6c774c7e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">jueunbonalee</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./posts.html"> 
+<span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./til.html" aria-current="page"> 
+<span class="menu-text">TIL</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Today I Learned</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,400;1,7..72,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --til-bg: #eeece2;
+    --til-surface: #f5f4ee;
+    --til-surface2: #f4f3ee;
+    --til-border: #ddd8ca;
+    --til-text: #3d3929;
+    --til-muted: #6b6552;
+    --til-accent: #da7756;
+    --til-accent-dark: #bd5d3a;
+    --til-green: #5a8c6a;
+    --til-green-light: #e2f0e6;
+    --til-green-mid: #b8d8c0;
+    --til-green-high: #7ab88a;
+    --til-white: #ffffff;
+    --til-serif: 'Literata', Georgia, serif;
+    --til-body: 'Source Serif 4', Georgia, serif;
+    --til-mono: 'JetBrains Mono', monospace;
+  }
+
+  .til-app * { box-sizing: border-box; margin: 0; padding: 0; }
+  .til-app { max-width: 1200px; margin: 0 auto; padding: 0 1rem 3rem; font-family: var(--til-body); color: var(--til-text); }
+
+  .til-stats-bar { display: flex; gap: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--til-border); }
+  .til-stat { text-align: left; }
+  .til-stat-num { font-family: var(--til-serif); font-size: 1.5rem; font-weight: 700; color: var(--til-green); line-height: 1; }
+  .til-stat-label { font-family: var(--til-mono); font-size: 0.55rem; color: var(--til-muted); letter-spacing: 0.12em; text-transform: uppercase; }
+
+  .til-nav { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem; }
+  .til-nav-btn { background: none; border: 1px solid var(--til-border); color: var(--til-muted); width: 30px; height: 30px; cursor: pointer; font-size: 0.7rem; display: flex; align-items: center; justify-content: center; transition: all 0.15s; font-family: var(--til-mono); border-radius: 4px; }
+  .til-nav-btn:hover { border-color: var(--til-accent); color: var(--til-accent); }
+  .til-month-label { font-family: var(--til-serif); font-size: 1.2rem; font-weight: 600; color: var(--til-text); }
+  .til-month-label span { font-family: var(--til-mono); font-size: 0.7rem; color: var(--til-muted); margin-left: 0.4rem; }
+  .til-today-btn { margin-left: auto; background: none; border: 1px solid var(--til-border); color: var(--til-muted); font-family: var(--til-mono); font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.7rem; cursor: pointer; border-radius: 4px; transition: all 0.15s; }
+  .til-today-btn:hover { border-color: var(--til-accent); color: var(--til-accent); }
+
+  .til-main { display: grid; grid-template-columns: 1fr 320px; gap: 1.5rem; align-items: start; }
+
+  .til-day-headers { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; margin-bottom: 3px; }
+  .til-day-header { text-align: center; font-family: var(--til-mono); font-size: 0.55rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--til-muted); padding: 0.4rem 0; }
+  .til-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; }
+
+  .til-cell { background: var(--til-white); border: 1px solid var(--til-border); min-height: 80px; padding: 0.4rem; cursor: default; transition: all 0.15s ease; border-radius: 3px; }
+  .til-cell.has-entry { cursor: pointer; }
+  .til-cell.has-entry:hover { border-color: var(--til-accent); background: var(--til-green-mid); }
+  .til-cell.empty { background: transparent; border-color: transparent; }
+  .til-cell.today { border-color: var(--til-accent); box-shadow: inset 0 0 0 1px var(--til-accent); }
+  .til-cell.has-entry { background: var(--til-green-light); border-color: var(--til-green-mid); }
+  .til-cell.has-entry.rich { background: var(--til-green-mid); border-color: var(--til-green-high); }
+
+  .til-cell-num { font-family: var(--til-mono); font-size: 0.7rem; color: var(--til-muted); font-weight: 500; display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.25rem; }
+  .til-cell.today .til-cell-num { color: var(--til-accent); font-weight: 600; }
+  .til-cell.has-entry .til-cell-num { color: var(--til-green); }
+  .til-cell-dot { display: none; width: 5px; height: 5px; border-radius: 50%; background: var(--til-green); }
+  .til-cell.has-entry .til-cell-dot { display: block; }
+  .til-cell-preview { font-size: 0.55rem; color: var(--til-muted); line-height: 1.5; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: break-word; opacity: 0.7; }
+
+  .til-sidebar { background: var(--til-white); border: 1px solid var(--til-border); border-radius: 6px; padding: 1.2rem; max-height: 600px; overflow-y: auto; }
+  .til-sidebar-title { font-family: var(--til-serif); font-size: 1rem; font-weight: 600; color: var(--til-text); margin-bottom: 1rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--til-border); }
+  .til-sidebar-empty { font-size: 0.8rem; color: var(--til-muted); font-style: italic; padding: 1rem 0; }
+  .til-list-item { padding: 0.7rem 0; border-bottom: 1px solid var(--til-surface2); cursor: pointer; transition: background 0.1s; }
+  .til-list-item:last-child { border-bottom: none; }
+  .til-list-item:hover { background: var(--til-surface); margin: 0 -0.5rem; padding: 0.7rem 0.5rem; border-radius: 4px; }
+  .til-list-date { font-family: var(--til-mono); font-size: 0.6rem; color: var(--til-accent-dark); letter-spacing: 0.05em; margin-bottom: 0.2rem; }
+  .til-list-text { font-size: 0.78rem; line-height: 1.6; color: var(--til-text); overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+  .til-list-tags { display: flex; gap: 0.3rem; flex-wrap: wrap; margin-top: 0.3rem; }
+  .til-list-tag { font-family: var(--til-mono); font-size: 0.5rem; color: var(--til-accent-dark); background: rgba(218,119,86,0.1); border: 1px solid rgba(218,119,86,0.2); padding: 0.1rem 0.4rem; border-radius: 2rem; letter-spacing: 0.05em; }
+
+  .til-legend { display: flex; gap: 1.5rem; margin-top: 1rem; align-items: center; }
+  .til-legend-item { display: flex; align-items: center; gap: 0.35rem; font-family: var(--til-mono); font-size: 0.55rem; color: var(--til-muted); letter-spacing: 0.1em; text-transform: uppercase; }
+  .til-legend-box { width: 11px; height: 11px; border: 1px solid; border-radius: 2px; }
+  .til-lb-empty { background: var(--til-white); border-color: var(--til-border); }
+  .til-lb-entry { background: var(--til-green-light); border-color: var(--til-green-mid); }
+  .til-lb-today { background: var(--til-white); border-color: var(--til-accent); box-shadow: inset 0 0 0 1px var(--til-accent); }
+
+  .til-heatmap-section { margin-top: 2rem; background: var(--til-white); border: 1px solid var(--til-border); border-radius: 6px; padding: 1.2rem; }
+  .til-heatmap-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.8rem; }
+  .til-heatmap-title { font-family: var(--til-mono); font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--til-muted); }
+  .til-streak { font-family: var(--til-serif); font-size: 1rem; font-weight: 600; color: var(--til-green); }
+  .til-heatmap-months { display: flex; gap: 0; margin-bottom: 0.3rem; }
+  .til-heatmap-month-label { font-family: var(--til-mono); font-size: 0.5rem; color: var(--til-muted); letter-spacing: 0.05em; text-align: left; flex: 1; }
+  .til-heatmap-grid { display: grid; grid-template-columns: repeat(53, 1fr); grid-template-rows: repeat(7, 1fr); gap: 2px; grid-auto-flow: column; }
+  .til-heat-cell { aspect-ratio: 1; background: var(--til-surface); border: 1px solid var(--til-border); border-radius: 2px; min-width: 0; }
+  .til-heat-cell.active { background: var(--til-green-light); border-color: var(--til-green-mid); }
+  .til-heat-cell.active-2 { background: var(--til-green-mid); border-color: var(--til-green-high); }
+  .til-heat-cell.active-3 { background: var(--til-green-high); border-color: var(--til-green); }
+  .til-heat-cell.future { background: transparent; border-color: transparent; }
+  .til-heatmap-legend { display: flex; align-items: center; gap: 0.3rem; margin-top: 0.6rem; justify-content: flex-end; }
+  .til-heatmap-legend-label { font-family: var(--til-mono); font-size: 0.5rem; color: var(--til-muted); margin-right: 0.2rem; }
+  .til-heatmap-legend-box { width: 10px; height: 10px; border-radius: 2px; border: 1px solid; }
+
+  .til-modal-backdrop { display: none; position: fixed; inset: 0; background: rgba(61,57,41,0.6); z-index: 1000; align-items: center; justify-content: center; padding: 1rem; backdrop-filter: blur(4px); }
+  .til-modal-backdrop.open { display: flex; animation: tilFadeIn 0.15s ease; }
+  @keyframes tilFadeIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes tilSlideUp { from { transform: translateY(12px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  .til-modal { background: var(--til-surface); border: 1px solid var(--til-border); border-radius: 8px; width: 100%; max-width: 540px; padding: 2rem; position: relative; animation: tilSlideUp 0.18s ease; }
+  .til-modal-date { font-family: var(--til-serif); font-size: 1.5rem; font-weight: 700; color: var(--til-accent-dark); margin-bottom: 0.15rem; }
+  .til-modal-weekday { font-family: var(--til-mono); font-size: 0.6rem; color: var(--til-muted); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.2rem; }
+  .til-modal-text { font-family: var(--til-body); font-size: 0.9rem; line-height: 1.8; color: var(--til-text); white-space: pre-wrap; margin-bottom: 1rem; }
+  .til-modal-tags { display: flex; gap: 0.35rem; flex-wrap: wrap; margin-bottom: 0.8rem; }
+  .til-modal-tag { font-family: var(--til-mono); font-size: 0.55rem; color: var(--til-accent-dark); background: rgba(218,119,86,0.1); border: 1px solid rgba(218,119,86,0.2); padding: 0.15rem 0.5rem; border-radius: 2rem; letter-spacing: 0.05em; text-transform: uppercase; }
+  .til-modal-mood { font-size: 1.3rem; }
+  .til-close-btn { position: absolute; top: 1rem; right: 1rem; background: none; border: none; color: var(--til-muted); font-size: 1.2rem; cursor: pointer; line-height: 1; transition: color 0.1s; }
+  .til-close-btn:hover { color: var(--til-text); }
+
+  @media (max-width: 900px) { .til-main { grid-template-columns: 1fr; } .til-sidebar { max-height: 300px; } }
+  @media (max-width: 600px) { .til-cell { min-height: 55px; } .til-stats-bar { flex-wrap: wrap; } .til-cell-preview { display: none; } }
+</style>
+
+<div class="til-app">
+  <div class="til-stats-bar">
+    <div class="til-stat"><div class="til-stat-num" id="til-stat-total">0</div><div class="til-stat-label">Total</div></div>
+    <div class="til-stat"><div class="til-stat-num" id="til-stat-streak">0</div><div class="til-stat-label">Streak</div></div>
+    <div class="til-stat"><div class="til-stat-num" id="til-stat-month">0</div><div class="til-stat-label">This Month</div></div>
+  </div>
+  <div class="til-nav">
+    <button class="til-nav-btn" id="til-prev">◂</button>
+    <button class="til-nav-btn" id="til-next">▸</button>
+    <div class="til-month-label" id="til-month-label"></div>
+    <button class="til-today-btn" id="til-today-btn">Today</button>
+  </div>
+  <div class="til-main">
+    <div class="til-calendar-col">
+      <div class="til-day-headers">
+        <div class="til-day-header">Mon</div><div class="til-day-header">Tue</div><div class="til-day-header">Wed</div>
+        <div class="til-day-header">Thu</div><div class="til-day-header">Fri</div><div class="til-day-header">Sat</div><div class="til-day-header">Sun</div>
+      </div>
+      <div class="til-cal-grid" id="til-cal-grid"></div>
+      <div class="til-legend">
+        <div class="til-legend-item"><div class="til-legend-box til-lb-empty"></div>No entry</div>
+        <div class="til-legend-item"><div class="til-legend-box til-lb-entry"></div>Learned</div>
+        <div class="til-legend-item"><div class="til-legend-box til-lb-today"></div>Today</div>
+      </div>
+    </div>
+    <div class="til-sidebar" id="til-sidebar">
+      <div class="til-sidebar-title">Recent TILs</div>
+      <div id="til-sidebar-list"></div>
+    </div>
+  </div>
+  <div class="til-heatmap-section">
+    <div class="til-heatmap-header">
+      <div class="til-heatmap-title">Yearly Learning Heatmap</div>
+      <div class="til-streak" id="til-streak-display"></div>
+    </div>
+    <div class="til-heatmap-months" id="til-heatmap-months"></div>
+    <div class="til-heatmap-grid" id="til-heatmap-grid"></div>
+    <div class="til-heatmap-legend">
+      <span class="til-heatmap-legend-label">Less</span>
+      <div class="til-heatmap-legend-box" style="background:var(--til-surface);border-color:var(--til-border);"></div>
+      <div class="til-heatmap-legend-box" style="background:var(--til-green-light);border-color:var(--til-green-mid);"></div>
+      <div class="til-heatmap-legend-box" style="background:var(--til-green-mid);border-color:var(--til-green-high);"></div>
+      <div class="til-heatmap-legend-box" style="background:var(--til-green-high);border-color:var(--til-green);"></div>
+      <span class="til-heatmap-legend-label">More</span>
+    </div>
+  </div>
+</div>
+
+<div class="til-modal-backdrop" id="til-modal-backdrop">
+  <div class="til-modal">
+    <button class="til-close-btn" id="til-modal-close">✕</button>
+    <div class="til-modal-date" id="til-modal-date"></div>
+    <div class="til-modal-weekday" id="til-modal-weekday"></div>
+    <div class="til-modal-text" id="til-modal-text"></div>
+    <div class="til-modal-tags" id="til-modal-tags"></div>
+    <div class="til-modal-mood" id="til-modal-mood"></div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const WEEKDAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const MONTHS_SHORT = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const MOOD_EMOJI = { '1': '😵', '2': '😐', '3': '😊', '4': '🔥' };
+
+  let data = {};
+  let currentYear, currentMonth;
+
+  async function loadData() {
+    try {
+      const base = document.querySelector('meta[name="quarto:offset"]');
+      const offset = base ? base.getAttribute('content') : '.';
+      const res = await fetch(offset + '/_data/til.json');
+      if (res.ok) data = await res.json();
+    } catch (e) { console.warn('Could not load TIL data:', e); }
+    renderCalendar();
+  }
+
+  function escHtml(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+  function mondayIndex(jsDay) { return (jsDay + 6) % 7; }
+
+  function renderCalendar() {
+    const grid = document.getElementById('til-cal-grid');
+    grid.innerHTML = '';
+    const today = new Date();
+    const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+    const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+    const emptySlots = mondayIndex(firstDay);
+
+    document.getElementById('til-month-label').innerHTML = MONTHS[currentMonth] + ' <span>' + currentYear + '</span>';
+
+    for (let i = 0; i < emptySlots; i++) { const el = document.createElement('div'); el.className = 'til-cell empty'; grid.appendChild(el); }
+
+    for (let d = 1; d <= daysInMonth; d++) {
+      const key = currentYear + '-' + String(currentMonth+1).padStart(2,'0') + '-' + String(d).padStart(2,'0');
+      const entry = data[key];
+      const isToday = today.getFullYear() === currentYear && today.getMonth() === currentMonth && today.getDate() === d;
+      const cell = document.createElement('div');
+      cell.className = 'til-cell' + (isToday ? ' today' : '') + (entry && entry.text ? ' has-entry' : '');
+      if (entry && entry.text && entry.text.length > 80) cell.classList.add('rich');
+      cell.innerHTML = '<div class="til-cell-num">' + d + '<div class="til-cell-dot"></div></div><div class="til-cell-preview">' + (entry ? escHtml(entry.text || '') : '') + '</div>';
+      if (entry && entry.text) cell.addEventListener('click', () => openModal(key));
+      grid.appendChild(cell);
+    }
+    updateStats(); renderSidebar(); renderHeatmap();
+  }
+
+  function updateStats() {
+    const allKeys = Object.keys(data).filter(k => data[k] && data[k].text);
+    const today = new Date();
+    const monthKeys = allKeys.filter(k => { const d = new Date(k); return d.getFullYear() === today.getFullYear() && d.getMonth() === today.getMonth(); });
+    const streak = calcStreak();
+    document.getElementById('til-stat-total').textContent = allKeys.length;
+    document.getElementById('til-stat-month').textContent = monthKeys.length;
+    document.getElementById('til-stat-streak').textContent = streak;
+    document.getElementById('til-streak-display').textContent = '🔥 ' + streak + ' day streak';
+  }
+
+  function calcStreak() {
+    let streak = 0, d = new Date();
+    while (true) {
+      const k = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+      if (data[k] && data[k].text) { streak++; d.setDate(d.getDate()-1); } else break;
+    }
+    return streak;
+  }
+
+  function renderSidebar() {
+    const list = document.getElementById('til-sidebar-list');
+    const entries = Object.keys(data).filter(k => data[k] && data[k].text).sort((a,b) => b.localeCompare(a)).slice(0, 20);
+    if (!entries.length) { list.innerHTML = '<div class="til-sidebar-empty">No entries yet.</div>'; return; }
+    list.innerHTML = entries.map(k => {
+      const e = data[k], d = new Date(k + 'T00:00:00');
+      const label = MONTHS_SHORT[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+      const tags = (e.tags || []).map(t => '<span class="til-list-tag">' + t + '</span>').join('');
+      return '<div class="til-list-item" data-key="' + k + '"><div class="til-list-date">' + label + '</div><div class="til-list-text">' + escHtml(e.text) + '</div>' + (tags ? '<div class="til-list-tags">' + tags + '</div>' : '') + '</div>';
+    }).join('');
+    list.querySelectorAll('.til-list-item').forEach(el => { el.addEventListener('click', () => openModal(el.dataset.key)); });
+  }
+
+  function renderHeatmap() {
+    const grid = document.getElementById('til-heatmap-grid'), monthsRow = document.getElementById('til-heatmap-months');
+    grid.innerHTML = ''; monthsRow.innerHTML = '';
+    const today = new Date(), year = today.getFullYear();
+    const jan1 = new Date(year, 0, 1), startOffset = mondayIndex(jan1.getDay());
+    const start = new Date(jan1); start.setDate(start.getDate() - startOffset);
+    MONTHS_SHORT.forEach(m => { const s = document.createElement('span'); s.className = 'til-heatmap-month-label'; s.textContent = m; monthsRow.appendChild(s); });
+    const dec31 = new Date(year, 11, 31); let cur = new Date(start);
+    while (cur <= dec31) {
+      const k = cur.getFullYear() + '-' + String(cur.getMonth()+1).padStart(2,'0') + '-' + String(cur.getDate()).padStart(2,'0');
+      const cell = document.createElement('div'); cell.className = 'til-heat-cell';
+      if (cur > today || cur.getFullYear() < year) cell.classList.add('future');
+      else if (data[k] && data[k].text) { const len = data[k].text.length; cell.classList.add(len > 150 ? 'active-3' : len > 60 ? 'active-2' : 'active'); }
+      cell.title = k; grid.appendChild(cell); cur.setDate(cur.getDate() + 1);
+    }
+  }
+
+  function openModal(key) {
+    const entry = data[key]; if (!entry || !entry.text) return;
+    const p = key.split('-'), dateObj = new Date(+p[0], +p[1]-1, +p[2]);
+    document.getElementById('til-modal-date').textContent = MONTHS[dateObj.getMonth()] + ' ' + dateObj.getDate() + ', ' + p[0];
+    document.getElementById('til-modal-weekday').textContent = WEEKDAYS[dateObj.getDay()];
+    document.getElementById('til-modal-text').textContent = entry.text;
+    document.getElementById('til-modal-tags').innerHTML = (entry.tags || []).map(t => '<span class="til-modal-tag">' + t + '</span>').join('');
+    document.getElementById('til-modal-mood').textContent = entry.mood ? (MOOD_EMOJI[entry.mood] || '') : '';
+    document.getElementById('til-modal-backdrop').classList.add('open');
+  }
+
+  function closeModal() { document.getElementById('til-modal-backdrop').classList.remove('open'); }
+  document.getElementById('til-modal-close').onclick = closeModal;
+  document.getElementById('til-modal-backdrop').onclick = (e) => { if (e.target === document.getElementById('til-modal-backdrop')) closeModal(); };
+  document.getElementById('til-prev').onclick = () => { currentMonth--; if (currentMonth < 0) { currentMonth = 11; currentYear--; } renderCalendar(); };
+  document.getElementById('til-next').onclick = () => { currentMonth++; if (currentMonth > 11) { currentMonth = 0; currentYear++; } renderCalendar(); };
+  document.getElementById('til-today-btn').onclick = () => { const n = new Date(); currentYear = n.getFullYear(); currentMonth = n.getMonth(); renderCalendar(); };
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+  const now = new Date(); currentYear = now.getFullYear(); currentMonth = now.getMonth(); loadData();
+})();
+</script>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/jueunbonalee\.com");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 jueunbonalee. All rights reserved.</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

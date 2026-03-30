@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://jueunbonalee.com/ko/index.html</loc>
+    <lastmod>2026-03-30T13:53:42.212Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jueunbonalee.com/about.html</loc>
+    <lastmod>2026-03-30T13:24:03.819Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jueunbonalee.com/about.ko.html</loc>
+    <lastmod>2026-03-30T13:24:28.284Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jueunbonalee.com/posts.ko.html</loc>
+    <lastmod>2026-03-30T13:09:57.878Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jueunbonalee.com/posts/welcome/index.html</loc>
+    <lastmod>2026-03-30T12:56:57.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jueunbonalee.com/posts/welcome/index.ko.html</loc>
+    <lastmod>2026-03-30T12:57:03.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jueunbonalee.com/til.html</loc>
+    <lastmod>2026-03-30T17:19:45.846Z</lastmod>
+  </url>
+  <url>
     <loc>https://jueunbonalee.com/index.html</loc>
     <lastmod>2026-03-30T13:53:28.340Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jueunbonalee.com/posts.html</loc>
+    <lastmod>2026-03-30T13:09:06.314Z</lastmod>
   </url>
 </urlset>

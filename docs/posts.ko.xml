@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>jueunbonalee</title>
+<link>https://jueunbonalee.com/posts.ko.html</link>
+<atom:link href="https://jueunbonalee.com/posts.ko.xml" rel="self" type="application/rss+xml"/>
+<description>jueunbonalee</description>
+<generator>quarto-1.9.36</generator>
+<lastBuildDate>Sun, 29 Mar 2026 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>jueunbonalee에 오신 것을 환영합니다</title>
+  <dc:creator>jueunbonalee </dc:creator>
+  <link>https://jueunbonalee.com/posts/welcome/index.ko.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="안녕하세요" class="level2">
+<h2 class="anchored" data-anchor-id="안녕하세요">안녕하세요!</h2>
+<p>새롭게 단장한 블로그에 오신 것을 환영합니다. 이곳에서 영어와 한국어로 데이터 사이언스 콘텐츠를 공유할 예정입니다.</p>
+<p>앞으로 다룰 주제:</p>
+<ul>
+<li>머신러닝 튜토리얼</li>
+<li>데이터 분석 워크스루</li>
+<li>통계적 사고</li>
+<li>도구 및 워크플로우 팁</li>
+</ul>
+<p><a href="../../posts/welcome/index.html">🇬🇧 Read in English</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <category>blog</category>
+  <guid>https://jueunbonalee.com/posts/welcome/index.ko.html</guid>
+  <pubDate>Sun, 29 Mar 2026 22:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
